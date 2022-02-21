@@ -1,25 +1,11 @@
-<<<<<<< HEAD
 import streamlit as st
 import pandas as pd
-from streamlit_folium import folium_static
-import folium, json
+
+"# UMEUS 6C Kitchen's Website"
 
 st.set_page_config(layout="wide")
 
 
-"# UMEUS 6C Kitchen's Website"
-
-
-=======
-import streamlit as st
-import pandas as pd
-from streamlit_folium import folium_static
-import folium, json
-
-st.set_page_config(layout="wide")
-
-
-"# UMEUS 6C Kitchen's Website"
 
 st.write("Welcome to 6c's Website!! 🎊")
 
@@ -50,5 +36,3 @@ with col3:
   
 
 
-
->>>>>>> 467e7bc547469c9df1571f53818f6490cd3f80e4
