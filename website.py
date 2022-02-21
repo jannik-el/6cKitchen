@@ -21,7 +21,9 @@ with col1:
       st.write('yasssss!')
   
 with col2:
-  st.header("Current Kitchen Captain, Shoppers and Weekend Cleaning")
+  st.header("Kitchen Captain, Shoppers and Weekend Cleaning")
+  
+  st.write("I'll automate this so you can check who is what and when")
   
   
 with col3:
