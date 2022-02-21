@@ -25,6 +25,8 @@ with col2:
   
   st.write("I'll automate this so you can check who is what and when")
   
+  st.image("https://static.streamlit.io/examples/cat.jpg")
+  
   
 with col3:
   st.header("Estimated Money?")
