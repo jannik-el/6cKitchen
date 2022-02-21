@@ -68,9 +68,14 @@ with st.container():
     st.write("[Last Updated: 21/02/2022]")
 
 
-st.write("You scrolled it this far down? Damn.")
+st.write("You scrolled this far down? Damn.")
 st.write("Please sign the petition to rename 6C Kitchen to:")
-st.write("SEXY KITCHEN")
+vote = st.checkbox("SEXY KITCHEN")
+
+if vote:
+  st.write("wwooooop woooopppp 💃💃💃💃💃💃💃")
+
+st.write("oh god what am i doing...")
 
 
 
