@@ -27,6 +27,9 @@ with col2:
 with col3:
   st.header("Estimated Money?")
   
+  st.write("~800kr")
+  st.write("Please don't go crazy with the decorations budget")
+  
   
 
 
