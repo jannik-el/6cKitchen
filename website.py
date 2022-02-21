@@ -1,11 +1,9 @@
 import streamlit as st
 import pandas as pd
 
-"# UMEUS 6C Kitchen's Website"
-
 st.set_page_config(layout="wide")
 
-
+"# UMEUS 6C Kitchen's Website"
 
 st.write("Welcome to 6c's Website!! 🎊")
 
