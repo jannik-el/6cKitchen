@@ -15,6 +15,10 @@ col1, col2, col3 = st.columns(3)
 with col1:
   st.header("Shopping List")
   
+  test = st.checkbox('Buy sum cookies')
+
+  if test:
+      st.write('yasssss!')
   
 with col2:
   st.header("Current Kitchen Captain, Shoppers and Weekend Cleaning")
