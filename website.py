@@ -66,7 +66,11 @@ with st.container():
     st.write("Currently at around ~800kr")
     st.write("Please don't go crazy with the decorations budget")
     st.write("[Last Updated: 21/02/2022]")
-  
-  
+
+
+st.write("You scrolled it this far down? Damn.")
+st.write("Please sign the petition to rename 6C Kitchen to:")
+st.write("SEXY KITCHEN")
+
 
 
