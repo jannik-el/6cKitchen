@@ -1,9 +1,19 @@
 import streamlit as st
-import pandas as pd
+# import pandas as pd
 
 kitchen_cap = "Caroline"
 shoppers = "Marc & Jannik"
 weekend_cleaning = "Caroline + Suheda"
+
+@st.cache(allow_output_mutation=True) # this allows input data to be saved
+def get_data():
+    return []
+
+class sl_list: #shopping list object
+
+  def __init__(self, name):
+    self.name = name
+
 
 st.set_page_config(layout="wide")
 
@@ -13,15 +23,16 @@ st.write("Welcome to 6c's Website!! 🎊")
 with st.container():
   col1, col2, col3 = st.columns(3)
 
-  with col1:
+  with col1: # Shopping List
     st.header("Shopping List")
+    st.write("This will be a shopping list for the kitchen, doesn't work yet, need to spend some time coding it first :)")
     
     test = st.checkbox('Buy sum cookies')
 
     if test:
-        st.write('yasssss!')
+        st.write('Why though?')
     
-  with col2:
+  with col2: # Kitchen Captain and etc. 
     st.header("Kitchen Captain, Shoppers and Weekend Cleaning")
 
     st.write("""
@@ -49,7 +60,7 @@ with st.container():
       Also waiting on Neel....
       """)
     
-  with col3:
+  with col3: # Money and etc...
     st.header("Money")
     
     st.write("Currently at around ~800kr")
