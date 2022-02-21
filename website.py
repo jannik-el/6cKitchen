@@ -73,9 +73,9 @@ st.write("Please sign the petition to rename 6C Kitchen to:")
 vote = st.checkbox("SEXY KITCHEN")
 
 if vote:
-  st.write("wwooooop woooopppp 💃💃💃💃💃💃💃")
+  st.write("wwooooop woooopppp 💃💃💃💃💃💃💃 its gettin hot in herrrrr")
 
-st.write("oh god what am i doing...")
+
 
 
 
