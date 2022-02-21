@@ -40,9 +40,9 @@ with st.container():
     As of 21/02/2022 these roles are accurate. 
     """)
 
-    st.write(f"Kitchen Captain: {0}".format(kitchen_cap))
-    st.write(f"Shoppers: {0}".format(shoppers))
-    st.write(f"Weekend Cleaning: {0}".format())
+    st.write(f"Kitchen Captain: {kitchen_cap}")
+    st.write(f"Shoppers: {shoppers}")
+    st.write(f"Weekend Cleaning: {weekend_cleaning}")
 
     with st.expander("See Kitchen Captain Chores Below:"):
 
