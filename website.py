@@ -35,9 +35,6 @@ with st.container():
       item_id().append("x")
       id = len(item_id())
       id = st.checkbox(i)
-
-    # if 1:
-    #   shop_list().remove(1)
       
   with col2: # Kitchen Captain and etc. 
     st.header("Kitchen Captain, Shoppers and Weekend Cleaning")
@@ -54,6 +51,7 @@ with st.container():
     with st.expander("See Kitchen Captain Chores Below:"):
 
       st.write("""
+        General Info:
         -	You are captain for one week at a time
         -	We follow the list posted in the kitchen with dates on it
         -	If you for can´t be kitchen captain the week you are assigned to be, you can switch with somebody
