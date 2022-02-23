@@ -80,7 +80,7 @@ vote2 = st.checkbox("SEX-C KITCHEN")
 
 if vote:
   st.write("wwooooop woooopppp 💃💃💃💃💃💃💃 its gettin hot in herrrrr")
-  vote_dict().update("vote1": ["yes"])
+  vote_dict().update("vote1", ["yes"])
 
 # if vote2:
 #   st.write("wwooooop woooopppp 💃💃💃💃💃💃💃 its gettin hot in herrrrr")
