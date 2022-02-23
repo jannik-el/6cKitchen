@@ -33,10 +33,10 @@ with st.container():
     with st.container(): # shopping list container
 
       for i in shop_list():
-        shop_dict().setdefault(shop_list.index(i), i)
+        shop_dict().setdefault(shop_list().index(i), i)
 
       for key in shop_dict():
-        key = st.checkbox(shop_dict[key])
+        key = st.checkbox(shop_dict()[key])
 
   with col2: # Kitchen Captain and etc. 
     st.header("Kitchen Captain, Shoppers and Weekend Cleaning")
