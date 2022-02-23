@@ -5,14 +5,15 @@ kitchen_cap = "Caroline"
 shoppers = "Marc & Jannik"
 weekend_cleaning = "Caroline + Suheda"
 
-@st.cache(allow_output_mutation=True) # this allows input data to be saved
-def get_data():
-    return []
 
+@st.cache(allow_output_mutation=True) # this allows input data to be saved
 class sl_list: #shopping list object
 
   def __init__(self, name):
     self.name = name
+
+  def create_item(self):
+
 
 
 st.set_page_config(layout="wide")
@@ -71,10 +72,21 @@ with st.container():
 st.write("You scrolled this far down? Damn.")
 st.write("Please sign the petition to rename 6C Kitchen to:")
 vote = st.checkbox("SEXY KITCHEN")
+vote2 = st.checkbox("SEX-C KITCHEN")
+
+vote_no = 0
+vote2_no = 0
 
 if vote:
   st.write("wwooooop woooopppp 💃💃💃💃💃💃💃 its gettin hot in herrrrr")
+  vote_no += 1
 
+if vote2:
+  st.write("wwooooop woooopppp 💃💃💃💃💃💃💃 its gettin hot in herrrrr")
+  vote2_no += 1
+
+st.write(f"Current Votes for option 1:", vote_no)
+st.write(f"Current Votes for option 2:", vote2_no)
 
 
 
