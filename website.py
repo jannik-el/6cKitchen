@@ -16,11 +16,6 @@ class SL_Class: #shopping list class
     self.append(item)
     return self
 
-  def create_checkboxes(self):
-    for i in self:
-      st.checkbox(i)
-    return
-
 st.set_page_config(layout="wide")
 
 "# UMEUS 6C Kitchen's Website"
@@ -39,7 +34,8 @@ with st.container():
     if add_item:
       shop_list.create_item(add_item)
     
-    shop_list.create_checkboxes()
+    for i in shop_list:
+      st.checkbox(i)
       
   with col2: # Kitchen Captain and etc. 
     st.header("Kitchen Captain, Shoppers and Weekend Cleaning")
