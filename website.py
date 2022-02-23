@@ -31,10 +31,7 @@ with st.container():
     if add_item:
       shop_list().append(add_item)
     
-    for i in shop_list():
-      item_id().append("x")
-      id = len(item_id())
-      id = st.checkbox(i)
+    radio_list = st.radio("", shop_list())
       
   with col2: # Kitchen Captain and etc. 
     st.header("Kitchen Captain, Shoppers and Weekend Cleaning")
