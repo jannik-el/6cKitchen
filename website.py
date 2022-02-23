@@ -5,8 +5,7 @@ kitchen_cap = "Caroline"
 shoppers = "Marc & Jannik"
 weekend_cleaning = "Caroline + Suheda"
 
-class sl_list: #shopping list class
-
+class SL_Class: #shopping list class
   @st.cache(allow_output_mutation=True) # this allows input data to be saved
   def __init__(self, s_list=[]): # create shopping list item
     self.item = s_list
@@ -27,7 +26,7 @@ st.set_page_config(layout="wide")
 "# UMEUS 6C Kitchen's Website"
 st.write("Welcome to 6c's Website!! 🎊")
 
-shop_list = sl_list()
+shop_list = SL_Class()
 
 with st.container():
   col1, col2, col3 = st.columns(3)
