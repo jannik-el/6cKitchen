@@ -27,6 +27,7 @@ with st.container():
       return {}
 
     add_item = st.text_input("Add a shopping list item here:")
+
     if add_item:
       shop_list().append(add_item)
 
@@ -38,7 +39,7 @@ with st.container():
     #   for key in shop_dict():
     #     key = st.checkbox(shop_dict()[key])
 
-      with st.button("Remove last item"):
+      if st.button("Remove last item"):
         shop_list.pop()
 
   with col2: # Kitchen Captain and etc. 
