@@ -24,15 +24,20 @@ with st.container():
     def shop_list():
       return []
 
+    def item_id():
+      return []
+
     add_item = st.text_input("Add a shopping list item here:")
     if add_item:
       shop_list().append(add_item)
     
     for i in shop_list():
-      i = st.checkbox(i)
+      item_id().append("x")
+      id = len(item_id())
+      id = st.checkbox(i)
 
-      if [i for i in shop_list()] == TRUE:
-        shop_list().remove(i)
+    if 1:
+      shop_list().remove(1)
       
   with col2: # Kitchen Captain and etc. 
     st.header("Kitchen Captain, Shoppers and Weekend Cleaning")
