@@ -24,19 +24,23 @@ with st.container():
     def shop_list():
       return []
 
+    @st.cache(allow_output_mutation=True) # this allows input data to be saved
+    def shop_dict():
+      return {}
+
     add_item = st.text_input("Add a shopping list item here:")
     if add_item:
       shop_list().append(add_item)
 
-    radio_list = st.radio("", shop_list())
+    with st.container(): # shopping list container
 
-    def remove_item(i):
-      shop_list().remove(i)
+      for i, j in map(shop_list()):
+        shop_dict().setdefault(i, j)
 
-    if st.button("Remove selected item"):
-      for i in shop_list():
-        if radio_list == i:
-          remove_item(i)
+      for key in shop_dict():
+        key = st.checkbox(shop_dict[key])
+
+
       
   with col2: # Kitchen Captain and etc. 
     st.header("Kitchen Captain, Shoppers and Weekend Cleaning")
