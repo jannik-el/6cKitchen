@@ -11,8 +11,6 @@ st.set_page_config(layout="wide")
 "# UMEUS 6C Kitchen's Website"
 st.write("Welcome to 6c's Website!! 🎊")
 
-# shop_list = SL_Class()
-
 with st.container():
   col1, col2, col3 = st.columns(3)
 
@@ -34,14 +32,12 @@ with st.container():
 
     with st.container(): # shopping list container
 
-      for i, j in map(shop_list()):
-        shop_dict().setdefault(i, j)
+      for i in shop_list():
+        shop_dict().setdefault(shop_list.index(i), i)
 
       for key in shop_dict():
         key = st.checkbox(shop_dict[key])
 
-
-      
   with col2: # Kitchen Captain and etc. 
     st.header("Kitchen Captain, Shoppers and Weekend Cleaning")
 
