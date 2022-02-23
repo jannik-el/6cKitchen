@@ -5,11 +5,11 @@ kitchen_cap = "Caroline"
 shoppers = "Marc & Jannik"
 weekend_cleaning = "Caroline + Suheda"
 
-# @st.cache(allow_output_mutation=True) # this allows input data to be saved
+@st.cache(allow_output_mutation=True) # this allows input data to be saved
 def return_vote():
   return []
 
-# @st.cache(allow_output_mutation=True) # this allows input data to be saved
+@st.cache(allow_output_mutation=True) # this allows input data to be saved
 def return_vote2():
   return []
 
