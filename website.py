@@ -5,17 +5,6 @@ kitchen_cap = "Caroline"
 shoppers = "Marc & Jannik"
 weekend_cleaning = "Caroline + Suheda"
 
-# class SL_Class: #shopping list class
-#   @st.cache(allow_output_mutation=True) # this allows input data to be saved
-#   def __init__(self, s_list=[]): # create shopping list item
-#     self.item = s_list
-#     return
-
-#   @st.cache(allow_output_mutation=True) # this allows input data to be saved
-#   def create_item(self, item):
-#     self.append(item)
-#     return self
-
 st.set_page_config(layout="wide")
 
 "# UMEUS 6C Kitchen's Website"
@@ -39,7 +28,10 @@ with st.container():
       shop_list().append(add_item)
     
     for i in shop_list():
-      st.checkbox(i)
+      i = st.checkbox(i)
+
+    if [i for i in shop_list()]:
+      shop_list().remove(i)
       
   with col2: # Kitchen Captain and etc. 
     st.header("Kitchen Captain, Shoppers and Weekend Cleaning")
