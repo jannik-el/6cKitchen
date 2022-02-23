@@ -36,8 +36,8 @@ with st.container():
       st.write("- ", i)
 
     if st.button("Remove last item"):
-      if len(shop_list) > 0:
-        shop_list.pop()
+      if len(shop_list()) > 0:
+        shop_list().pop()
 
   with col2: # Kitchen Captain and etc. 
     st.header("Kitchen Captain, Shoppers and Weekend Cleaning")
