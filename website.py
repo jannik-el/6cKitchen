@@ -60,15 +60,15 @@ with st.container():
         -	If you switch with somebody you write it on the list posted in the kitchen
 
         Duties:
-        •	Take out the trash when the trash cans are full
-        •	Take out bio trash every day or every second day
-        •	Remove anything from all the surfaces in the kitchen Thursday morning
-        •	Put up chairs in the kitchen Thursday morning or Wednesday night 
-        •	Empty the mailbox every day and put mail in the binder (remember to make sure the mailbox is locked)
-        •	Check the filters in the dishwasher a couple of times during the week
-        •	Remove the dirty cloths and dish towels every day if needed (and wash them if there is enough)
-        •	Make sure that the kitchen looks fine before you go to bed
-        •	Close the windows and turn the lights down
+        - Take out the trash when the trash cans are full
+        -	Take out bio trash every day or every second day
+        -	Remove anything from all the surfaces in the kitchen Thursday morning
+        -	Put up chairs in the kitchen Thursday morning or Wednesday night 
+        -	Empty the mailbox every day and put mail in the binder (remember to make sure the mailbox is locked)
+        -	Check the filters in the dishwasher a couple of times during the week
+        -	Remove the dirty cloths and dish towels every day if needed (and wash them if there is enough)
+        -	Make sure that the kitchen looks fine before you go to bed
+        -	Close the windows and turn the lights down
       """)
     
     with st.expander("See Shopper roles below:"):
