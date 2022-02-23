@@ -32,7 +32,7 @@ with st.container():
     if add_item:
       shop_list().append(add_item)
     
-    radio_list = st.radio("", shop_list())
+    radio_list = st.radio("", shop_list(), help)
 
     for i in shop_list():
       if radio_list == i:
