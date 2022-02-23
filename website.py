@@ -86,7 +86,7 @@ if vote:
 #   st.write("wwooooop woooopppp 💃💃💃💃💃💃💃 its gettin hot in herrrrr")
 #   get_vote2_no()
 
-st.write(f"Current Votes for option 1:", vote_dict["vote1"])
+st.write(f"Current Votes for option 1:", vote_dict)
 # st.write(f"Current Votes for option 2:", get_vote2_no())
 
 
