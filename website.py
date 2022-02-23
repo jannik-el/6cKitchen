@@ -19,7 +19,7 @@ with st.container():
     st.header("Shopping List")
     st.write("This will be a shopping list for the kitchen, doesn't work yet, need to spend some time coding it first :)")
     
-    @st.cache(allow_output_mutation=True) # this allows input data to be saved
+    # @st.cache(allow_output_mutation=True) # this allows input data to be saved
     def shop_list():
       return []
 
