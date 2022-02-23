@@ -5,7 +5,7 @@ kitchen_cap = "Caroline"
 shoppers = "Marc & Jannik"
 weekend_cleaning = "Caroline + Suheda"
 
-vote = 0
+vote=0
 
 @st.cache(allow_output_mutation=True) # this allows input data to be saved
 def get_vote_no():
