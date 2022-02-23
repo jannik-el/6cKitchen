@@ -36,8 +36,8 @@ with st.container():
       id = len(item_id())
       id = st.checkbox(i)
 
-    if 1:
-      shop_list().remove(1)
+    # if 1:
+    #   shop_list().remove(1)
       
   with col2: # Kitchen Captain and etc. 
     st.header("Kitchen Captain, Shoppers and Weekend Cleaning")
@@ -54,7 +54,21 @@ with st.container():
     with st.expander("See Kitchen Captain Chores Below:"):
 
       st.write("""
-         Waiting on Neel to send me these   
+        -	You are captain for one week at a time
+        -	We follow the list posted in the kitchen with dates on it
+        -	If you for can´t be kitchen captain the week you are assigned to be, you can switch with somebody
+        -	If you switch with somebody you write it on the list posted in the kitchen
+
+        Duties:
+        •	Take out the trash when the trash cans are full
+        •	Take out bio trash every day or every second day
+        •	Remove anything from all the surfaces in the kitchen Thursday morning
+        •	Put up chairs in the kitchen Thursday morning or Wednesday night 
+        •	Empty the mailbox every day and put mail in the binder (remember to make sure the mailbox is locked)
+        •	Check the filters in the dishwasher a couple of times during the week
+        •	Remove the dirty cloths and dish towels every day if needed (and wash them if there is enough)
+        •	Make sure that the kitchen looks fine before you go to bed
+        •	Close the windows and turn the lights down
       """)
     
     with st.expander("See Shopper roles below:"):
