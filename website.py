@@ -9,7 +9,7 @@ vote=0
 
 @st.cache(allow_output_mutation=True) # this allows input data to be saved
 def vote_dict(vote1=0, vote2=0):
-  return {"vote1", "vote2"}
+  return {"vote1" : 0, "vote2" : 0}
 
 # class sl_list: #shopping list object
 
@@ -80,7 +80,7 @@ vote2 = st.checkbox("SEX-C KITCHEN")
 
 if vote:
   st.write("wwooooop woooopppp 💃💃💃💃💃💃💃 its gettin hot in herrrrr")
-  vote_dict().update("vote1": vote +=1)
+  vote_dict().update("vote1": ["yes"])
 
 # if vote2:
 #   st.write("wwooooop woooopppp 💃💃💃💃💃💃💃 its gettin hot in herrrrr")
