@@ -5,26 +5,29 @@ kitchen_cap = "Caroline"
 shoppers = "Marc & Jannik"
 weekend_cleaning = "Caroline + Suheda"
 
-@st.cache(allow_output_mutation=True) # this allows input data to be saved
-def return_vote():
-  return []
+class sl_list: #shopping list class
 
-@st.cache(allow_output_mutation=True) # this allows input data to be saved
-def return_vote2():
-  return []
+  @st.cache(allow_output_mutation=True) # this allows input data to be saved
+  def __init__(self, s_list=[]): # create shopping list item
+    self.item = s_list
+    return s_list
 
-# class sl_list: #shopping list object
+  @st.cache(allow_output_mutation=True) # this allows input data to be saved
+  def create_item(self, item):
+    self.append(item)
+    return self
 
-#   def __init__(self, name):
-#     self.name = name
-
-#   def create_item(self):
-#     return
+  def create_checkboxes(self):
+    for i in self:
+      st.checkbox(i)
+    return
 
 st.set_page_config(layout="wide")
 
 "# UMEUS 6C Kitchen's Website"
 st.write("Welcome to 6c's Website!! 🎊")
+
+shop_list = sl_list()
 
 with st.container():
   col1, col2, col3 = st.columns(3)
@@ -33,11 +36,12 @@ with st.container():
     st.header("Shopping List")
     st.write("This will be a shopping list for the kitchen, doesn't work yet, need to spend some time coding it first :)")
     
-    test = st.checkbox('Buy sum cookies')
-
-    if test:
-        st.write('Why though?')
+    add_item = st.text_input("Add a shopping list item here:")
+    if add_item:
+      shop_list.create_item(add_item)
     
+    shop_list.create_checkboxes()
+      
   with col2: # Kitchen Captain and etc. 
     st.header("Kitchen Captain, Shoppers and Weekend Cleaning")
 
@@ -74,7 +78,19 @@ with st.container():
     st.write("[Last Updated: 21/02/2022]")
 
 
-st.write("You scrolled this far down? Damn.")
+################# testing ################
+
+
+@st.cache(allow_output_mutation=True) # this allows input data to be saved
+def return_vote():
+  return []
+
+@st.cache(allow_output_mutation=True) # this allows input data to be saved
+def return_vote2():
+  return []
+
+
+st.write("Testing....")
 st.write("Please sign the petition to rename 6C Kitchen to:")
 vote = st.checkbox("SEXY KITCHEN")
 vote2 = st.checkbox("SEX-C KITCHEN")
