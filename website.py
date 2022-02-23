@@ -1,3 +1,4 @@
+from ossaudiodev import SNDCTL_SYNTH_REMOVESAMPLE
 from pickle import TRUE
 import streamlit as st
 # import pandas as pd
@@ -31,15 +32,11 @@ with st.container():
     if add_item:
       shop_list().append(add_item)
 
-    # with st.container(): # shopping list container
+    for i in shop_list():
+      st.write("- ", i)
 
-    #   for i in shop_list():
-    #     shop_dict().setdefault(shop_list().index(i), i)
-
-    #   for key in shop_dict():
-    #     key = st.checkbox(shop_dict()[key])
-
-      if st.button("Remove last item"):
+    if st.button("Remove last item"):
+      if len(shop_list) > 0:
         shop_list.pop()
 
   with col2: # Kitchen Captain and etc. 
