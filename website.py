@@ -38,6 +38,10 @@ with st.container():
       for key in shop_dict():
         key = st.checkbox(shop_dict()[key])
 
+        if key:
+          shop_list().remove(key)
+
+
   with col2: # Kitchen Captain and etc. 
     st.header("Kitchen Captain, Shoppers and Weekend Cleaning")
 
