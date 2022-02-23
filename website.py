@@ -13,8 +13,7 @@ class sl_list: #shopping list object
     self.name = name
 
   def create_item(self):
-
-
+    return
 
 st.set_page_config(layout="wide")
 
