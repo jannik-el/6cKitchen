@@ -32,6 +32,9 @@ with st.container():
       shop_list().append(add_item)
     
     radio_list = st.radio("", shop_list())
+
+    if radio_list == [i for i in shop_list()]:
+      shop_list().remove(i)
       
   with col2: # Kitchen Captain and etc. 
     st.header("Kitchen Captain, Shoppers and Weekend Cleaning")
