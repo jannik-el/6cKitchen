@@ -5,23 +5,23 @@ kitchen_cap = "Caroline"
 shoppers = "Marc & Jannik"
 weekend_cleaning = "Caroline + Suheda"
 
-class SL_Class: #shopping list class
-  @st.cache(allow_output_mutation=True) # this allows input data to be saved
-  def __init__(self, s_list=[]): # create shopping list item
-    self.item = s_list
-    return
+# class SL_Class: #shopping list class
+#   @st.cache(allow_output_mutation=True) # this allows input data to be saved
+#   def __init__(self, s_list=[]): # create shopping list item
+#     self.item = s_list
+#     return
 
-  @st.cache(allow_output_mutation=True) # this allows input data to be saved
-  def create_item(self, item):
-    self.append(item)
-    return self
+#   @st.cache(allow_output_mutation=True) # this allows input data to be saved
+#   def create_item(self, item):
+#     self.append(item)
+#     return self
 
 st.set_page_config(layout="wide")
 
 "# UMEUS 6C Kitchen's Website"
 st.write("Welcome to 6c's Website!! 🎊")
 
-shop_list = SL_Class()
+# shop_list = SL_Class()
 
 with st.container():
   col1, col2, col3 = st.columns(3)
@@ -30,11 +30,15 @@ with st.container():
     st.header("Shopping List")
     st.write("This will be a shopping list for the kitchen, doesn't work yet, need to spend some time coding it first :)")
     
+    @st.cache(allow_output_mutation=True) # this allows input data to be saved
+    def shop_list():
+      return []
+
     add_item = st.text_input("Add a shopping list item here:")
     if add_item:
-      shop_list.create_item(add_item)
+      shop_list().append(add_item)
     
-    for i in shop_list:
+    for i in shop_list():
       st.checkbox(i)
       
   with col2: # Kitchen Captain and etc. 
