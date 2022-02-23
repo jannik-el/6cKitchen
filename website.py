@@ -91,8 +91,8 @@ if vote2:
   st.write("wwooooop woooopppp 💃💃💃💃💃💃💃 its gettin hot in herrrrr")
   get_vote2_no()
 
-st.write(f"Current Votes for option 1:", vote_no)
-st.write(f"Current Votes for option 2:", vote2_no)
+st.write(f"Current Votes for option 1:", get_vote_no())
+st.write(f"Current Votes for option 2:", get_vote2_no())
 
 
 
