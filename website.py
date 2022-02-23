@@ -25,7 +25,8 @@ with st.container():
       return []
 
     if st.button("Clear list"):
-      shop_list()
+      for i in range(len(shop_list())):
+        shop_list().pop()
 
     add_item = st.text_input("Add a shopping list item here:")
     if add_item:
