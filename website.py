@@ -24,6 +24,9 @@ with st.container():
     def shop_list():
       return []
 
+    if st.button("Clear list"):
+      shop_list()
+
     add_item = st.text_input("Add a shopping list item here:")
     if add_item:
       shop_list().append(add_item)
@@ -31,7 +34,7 @@ with st.container():
     radio_list = st.radio("", shop_list())
 
     if radio_list == [i for i in shop_list()]:
-      shop_list().remove(i)
+      shop_list().pop()
       
   with col2: # Kitchen Captain and etc. 
     st.header("Kitchen Captain, Shoppers and Weekend Cleaning")
