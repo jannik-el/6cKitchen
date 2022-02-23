@@ -22,11 +22,11 @@ with st.container():
     
     @st.cache(allow_output_mutation=True) # this allows input data to be saved
     def shop_list():
-      return ()
+      return []
 
     add_item = st.text_input("Add a shopping list item here:")
     if add_item:
-      shop_list().add(add_item)
+      shop_list().append(add_item)
     
     radio_list = st.radio("", shop_list())
 
