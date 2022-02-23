@@ -24,7 +24,7 @@ with st.container():
     def shop_list():
       return []
 
-    if st.button("Clear list"):
+    if st.button("Remove last item"):
       for i in range(len(shop_list())):
         shop_list().pop()
 
@@ -34,8 +34,9 @@ with st.container():
     
     radio_list = st.radio("", shop_list())
 
-    if radio_list == [i for i in shop_list()]:
-      shop_list().pop()
+    for i in shop_list():
+      if radio_list == i:
+        shop_list().remove(i)
       
   with col2: # Kitchen Captain and etc. 
     st.header("Kitchen Captain, Shoppers and Weekend Cleaning")
