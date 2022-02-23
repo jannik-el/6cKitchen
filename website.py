@@ -30,17 +30,16 @@ with st.container():
     if add_item:
       shop_list().append(add_item)
 
-    with st.container(): # shopping list container
+    # with st.container(): # shopping list container
 
-      for i in shop_list():
-        shop_dict().setdefault(shop_list().index(i), i)
+    #   for i in shop_list():
+    #     shop_dict().setdefault(shop_list().index(i), i)
 
-      for key in shop_dict():
-        key = st.checkbox(shop_dict()[key])
+    #   for key in shop_dict():
+    #     key = st.checkbox(shop_dict()[key])
 
-        if key:
-          shop_list().remove(key)
-
+      with st.button("Remove last item"):
+        shop_list.pop()
 
   with col2: # Kitchen Captain and etc. 
     st.header("Kitchen Captain, Shoppers and Weekend Cleaning")
