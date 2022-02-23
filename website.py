@@ -24,19 +24,19 @@ with st.container():
     def shop_list():
       return []
 
-    if st.button("Remove last item"):
-      for i in range(len(shop_list())):
-        shop_list().pop()
-
     add_item = st.text_input("Add a shopping list item here:")
     if add_item:
       shop_list().append(add_item)
-    
+
     radio_list = st.radio("", shop_list(), help)
 
-    for i in shop_list():
-      if radio_list == i:
-        shop_list().remove(i)
+    def remove_item(i):
+      shop_list().remove(i)
+
+    if st.button("Remove selected item"):
+      for i in shop_list():
+        if radio_list == i:
+          remove_item(i)
       
   with col2: # Kitchen Captain and etc. 
     st.header("Kitchen Captain, Shoppers and Weekend Cleaning")
