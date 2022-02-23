@@ -22,10 +22,7 @@ with st.container():
     
     @st.cache(allow_output_mutation=True) # this allows input data to be saved
     def shop_list():
-      return []
-
-    def item_id():
-      return []
+      return ()
 
     add_item = st.text_input("Add a shopping list item here:")
     if add_item:
