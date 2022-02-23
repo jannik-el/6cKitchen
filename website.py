@@ -5,8 +5,12 @@ kitchen_cap = "Caroline"
 shoppers = "Marc & Jannik"
 weekend_cleaning = "Caroline + Suheda"
 
-@st.cache(allow_output_mutation=True) # this allows input data to be saved
+# @st.cache(allow_output_mutation=True) # this allows input data to be saved
 def return_vote():
+  return []
+
+# @st.cache(allow_output_mutation=True) # this allows input data to be saved
+def return_vote2():
   return []
 
 # class sl_list: #shopping list object
@@ -77,15 +81,15 @@ vote2 = st.checkbox("SEX-C KITCHEN")
 
 
 if vote:
-  st.write("wwooooop woooopppp 💃💃💃💃💃💃💃 its gettin hot in herrrrr")
+  # st.write("wwooooop woooopppp 💃💃💃💃💃💃💃 its gettin hot in herrrrr")
   return_vote().append("x")
 
-# if vote2:
-#   st.write("wwooooop woooopppp 💃💃💃💃💃💃💃 its gettin hot in herrrrr")
-#   get_vote2_no()
+if vote2:
+  # st.write("wwooooop woooopppp 💃💃💃💃💃💃💃 its gettin hot in herrrrr")
+  return_vote2().append("x")
 
 st.write(f"Current Votes for option 1:", len(return_vote()))
-# st.write(f"Current Votes for option 2:", get_vote2_no())
+st.write(f"Current Votes for option 2:", len(return_vote2()))
 
 
 
