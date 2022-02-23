@@ -1,3 +1,4 @@
+from pickle import TRUE
 import streamlit as st
 # import pandas as pd
 
@@ -30,8 +31,8 @@ with st.container():
     for i in shop_list():
       i = st.checkbox(i)
 
-    if [i for i in shop_list()]:
-      shop_list().remove(i)
+      if [i for i in shop_list()] == TRUE:
+        shop_list().remove(i)
       
   with col2: # Kitchen Captain and etc. 
     st.header("Kitchen Captain, Shoppers and Weekend Cleaning")
