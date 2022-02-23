@@ -28,7 +28,7 @@ with st.container():
     if add_item:
       shop_list().append(add_item)
 
-    radio_list = st.radio("", shop_list(), help)
+    radio_list = st.radio("", shop_list())
 
     def remove_item(i):
       shop_list().remove(i)
