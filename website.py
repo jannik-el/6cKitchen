@@ -8,22 +8,16 @@ weekend_cleaning = "Caroline + Suheda"
 vote=0
 
 @st.cache(allow_output_mutation=True) # this allows input data to be saved
-def get_vote_no():
-  vote += 1
-  return vote
+def vote_dict(vote1=0, vote2=0):
+  return {"vote1", "vote2"}
 
-@st.cache(allow_output_mutation=True) # this allows input data to be saved
-def get_vote2_no():
-  vote += 1
-  return vote
+# class sl_list: #shopping list object
 
-class sl_list: #shopping list object
+#   def __init__(self, name):
+#     self.name = name
 
-  def __init__(self, name):
-    self.name = name
-
-  def create_item(self):
-    return
+#   def create_item(self):
+#     return
 
 st.set_page_config(layout="wide")
 
@@ -86,14 +80,14 @@ vote2 = st.checkbox("SEX-C KITCHEN")
 
 if vote:
   st.write("wwooooop woooopppp 💃💃💃💃💃💃💃 its gettin hot in herrrrr")
-  get_vote_no()
+  vote_dict().update("vote1": vote +=1)
 
-if vote2:
-  st.write("wwooooop woooopppp 💃💃💃💃💃💃💃 its gettin hot in herrrrr")
-  get_vote2_no()
+# if vote2:
+#   st.write("wwooooop woooopppp 💃💃💃💃💃💃💃 its gettin hot in herrrrr")
+#   get_vote2_no()
 
-st.write(f"Current Votes for option 1:", get_vote_no())
-st.write(f"Current Votes for option 2:", get_vote2_no())
+st.write(f"Current Votes for option 1:", vote_dict["vote1"])
+# st.write(f"Current Votes for option 2:", get_vote2_no())
 
 
 
