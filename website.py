@@ -9,7 +9,7 @@ class SL_Class: #shopping list class
   @st.cache(allow_output_mutation=True) # this allows input data to be saved
   def __init__(self, s_list=[]): # create shopping list item
     self.item = s_list
-    return s_list
+    return
 
   @st.cache(allow_output_mutation=True) # this allows input data to be saved
   def create_item(self, item):
